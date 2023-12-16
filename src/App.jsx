@@ -30,7 +30,6 @@ function App() {
   };
 
   const handleGenreClick = (genreValue) => {
-    console.log("genreValue", genreValue);
     setSelectedGenre(genreValue);
   };
 
@@ -40,7 +39,12 @@ function App() {
       <Wrapper style={{ display: "flex" }}>
         <UserComponentStyles>
           <SearchableDropdown onSelectActor={handleSelectActor} />
-          {selectedActor && <GenreList handleGenreClick={handleGenreClick} />}
+          {selectedActor && (
+            <GenreList
+              handleGenreClick={handleGenreClick}
+              key={selectedActor}
+            />
+          )}
         </UserComponentStyles>
 
         {selectedGenre && (
