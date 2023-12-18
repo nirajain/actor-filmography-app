@@ -7,7 +7,6 @@ export const StyledInput = styled.input`
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #d3d3d3; /* GenreList background color */
 `;
 
 export const DropDownList = styled.ul`
@@ -29,6 +28,12 @@ export const DropDropnListItem = styled.li`
   transition: background-color 0.3s;
 `;
 
+export const InputTitle = styled.div`
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: fangsong;
+`;
 export const MovieListWrapper = styled.div`
   background-color: #d3d3d3; /* GenreList background color */
   padding: 20px;
@@ -56,15 +61,15 @@ export const MovieItems = styled.li`
 `;
 
 export const GenreListWrapper = styled.div`
-  background-color: #d3d3d3; /* GenreList background color */
+  /* background-color: #d3d3d3; /* GenreList background color */ */
   padding: 20px;
   border-radius: 8px;
-  flex-basis: 40%;
 `;
 
-export const GenreTitle = styled.h2`
+export const GenreTitle = styled.div`
   font-size: 1.2em;
   margin-bottom: 10px;
+  font-family: fangsong;
 `;
 
 export const GenreMapList = styled.ul`
@@ -86,4 +91,8 @@ export const GenreItems = styled.li`
   &:hover {
     background-color: #ddd; /* Hover background color */
   }
+`;
+
+export const GenreOptions = styled.option`
+  background-color: #d3d3d3;
 `;

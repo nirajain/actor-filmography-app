@@ -6,20 +6,21 @@ import {
   GenreTitle,
   GenreMapList,
   GenreDropdown,
+  GenreOptions,
 } from "./styles";
 
 const GenreList = ({ handleGenreClick }) => {
   return (
     <GenreListWrapper>
-      <GenreTitle>Genre List </GenreTitle>
+      <GenreTitle> Pick Your Genre: </GenreTitle>
       <GenreDropdown
         onChange={(e) => handleGenreClick(parseInt(e.target.value, 10))}
       >
-        <option value="">Select Genre</option>
+        <GenreOptions value="">Select Genre</GenreOptions>
         {genreMap.map((genre) => (
-          <option key={genre.value} value={genre.value}>
+          <GenreOptions key={genre.value} value={genre.value}>
             {genre.name}
-          </option>
+          </GenreOptions>
         ))}
       </GenreDropdown>
     </GenreListWrapper>

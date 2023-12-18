@@ -6,6 +6,7 @@ import {
   DropDropnListItem,
   SearchableDropdownWrapper,
   StyledInput,
+  InputTitle,
 } from "./styles";
 
 const SearchableDropdown = ({ onSelectActor }) => {
@@ -36,6 +37,7 @@ const SearchableDropdown = ({ onSelectActor }) => {
 
   return (
     <SearchableDropdownWrapper>
+      <InputTitle>Enter Your Favourite Actor's Name:</InputTitle>
       <StyledInput
         type="text"
         placeholder="Search for an actor"

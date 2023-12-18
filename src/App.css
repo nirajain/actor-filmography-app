@@ -5,14 +5,23 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5; 
+  background-color: #f1e5ed; 
 }
 
 .app-container {
-  max-width: 800px;
-  margin: 20px auto;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #e9e4c4; 
+}
+.title{
+  text-align:center;
+  font-size:2rem;
+  font-weight:bold;
+  color:#333;
+  margin-bottom:1rem;
 }
 
+.description{
+  text-align:center;
+  font-size:1rem;
+  color:#666;
+  margin-bottom:2rem;
+}

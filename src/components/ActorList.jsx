@@ -23,7 +23,7 @@ const ActorList = ({ onSelectActor }) => {
 
   return (
     <div>
-      <h2>Actors List</h2>
+      
       <ul>
         {actors.map((actor) => (
           <li key={actor.id} onClick={() => onSelectActor(actor.id)}>

@@ -1,6 +1,5 @@
 //
 import React, { useState } from "react";
-import ActorList from "./components/ActorList";
 import MovieList from "./components/MovieList";
 import SearchableDropdown from "./components/SearchableDropdown";
 import GenreList from "./components/GenreList";
@@ -11,13 +10,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e9e4c4;
   padding: 20px;
 `;
 
 const UserComponentStyles = styled.div`
   display: flex;
   gap: 4rem;
+  ustify-content: space-between;
   align-items: center;
 `;
 function App() {
@@ -35,16 +34,19 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1>Actor Movies App</h1>
+      <div className="title">Star Flicks Hub</div>
+      <p className="description">
+        No more hassle to find the perfect movie. Just write selecting below!!
+      </p>
       <Wrapper style={{ display: "flex" }}>
         <UserComponentStyles>
           <SearchableDropdown onSelectActor={handleSelectActor} />
-          {selectedActor && (
+          {
             <GenreList
               handleGenreClick={handleGenreClick}
               key={selectedActor}
             />
-          )}
+          }
         </UserComponentStyles>
 
         {selectedGenre && (
